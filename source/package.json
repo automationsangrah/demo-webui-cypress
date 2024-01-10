@@ -1,0 +1,22 @@
+{
+  "name": "webuiautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/automationsangrah/demo-webui-cypress.git"
+  },
+  "author": "Ankit Kishor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/automationsangrah/demo-webui-cypress/issues"
+  },
+  "homepage": "https://github.com/automationsangrah/demo-webui-cypress#readme",
+  "devDependencies": {
+    "cypress": "^13.6.2"
+  }
+}
