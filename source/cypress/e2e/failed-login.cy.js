@@ -9,7 +9,7 @@ describe('Login Page', ()=> {
         cy.visit(Cypress.env('loginBase'))
     })
 
-    it.only('should verify the login page',()=>{
+    it('should verify the login page',()=>{
         loginPageElement.loginLogo().should('have.text', 'Swag Labs')
         loginPageElement.userName().invoke('attr', 'placeholder').should('eq', 'Username')
         loginPageElement.password().invoke('attr', 'placeholder').should('eq', 'Password')

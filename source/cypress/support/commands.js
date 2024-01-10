@@ -11,11 +11,13 @@
 //
 // -- This is a parent command --
 import { LoginPage } from '../support/page_object/login-page.po'
- Cypress.Commands.add('login', (email, password) => {
+ Cypress.Commands.add('login', () => {
     const loginPageElement = new LoginPage()
     cy.visit(Cypress.env('loginBase'))
-    loginPageElement.userName().should('be.visible').type('standard_user')
-    loginPageElement.password().should('be.visible').type('secret_sauce')
+    cy.fixture('automationData').then((credentials)=>{
+        loginPageElement.userName().should('be.visible').type(credentials.validUser.Username)
+        loginPageElement.password().should('be.visible').type(credentials.validUser.Password)
+    })
 })
 //
 //
