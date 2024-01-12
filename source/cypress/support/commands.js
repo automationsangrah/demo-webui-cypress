@@ -17,6 +17,7 @@ import { LoginPage } from '../support/page_object/login-page.po'
     cy.fixture('automationData').then((credentials)=>{
         loginPageElement.userName().should('be.visible').type(credentials.validUser.Username)
         loginPageElement.password().should('be.visible').type(credentials.validUser.Password)
+        loginPageElement.loginButton().should('be.visible').click()
     })
 })
 //
