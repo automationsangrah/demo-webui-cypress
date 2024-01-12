@@ -13,4 +13,13 @@ export class LoginPage {
     loginButton() {
         return cy.get('[data-test="login-button"]')
     }
+    loginErrorCloseButton() {
+        return cy.get('svg.error_icon')
+    }
+    loginErrorMessage() {
+        return cy.get('h3[data-test="error"]')
+    }
+    loginErrorMessageCloseButton() {
+        return cy.get('button.error-button')
+    }
 }
