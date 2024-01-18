@@ -1,2 +1,4 @@
 package-lock.json
 /source/node_modules
+/source/cypress/downloads
+/source/output-generation
