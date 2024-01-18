@@ -4,7 +4,9 @@
   "description": "This solution of UI automation contain page object model pattern.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:run": "cypress run --headless --browser chrome",
+    "combine-reports": "mochawesome-merge output-generation/reports/mocha/**.json > output-generation/reports/report.json",
+    "generate-reports": "marge output-generation/reports/report.json -f report -o output-generation/reports/mochareports"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,11 @@
   },
   "homepage": "https://github.com/automationsangrah/demo-webui-cypress#readme",
   "devDependencies": {
-    "cypress": "^13.6.2"
+    "cypress": "^13.6.2",
+    "cypress-multi-reporters": "^1.6.4",
+    "mocha-junit-reporter": "^2.2.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }
