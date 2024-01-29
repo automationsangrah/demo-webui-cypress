@@ -14,6 +14,7 @@ describe('Login Page', ()=> {
         loginPageElement.userName().invoke('attr', 'placeholder').should('eq', 'Username')
         loginPageElement.password().invoke('attr', 'placeholder').should('eq', 'Password')
         loginPageElement.loginButton().should('have.value', 'Login')
+        cy.title().should('eq', 'Swag Labs')
     })
 
     it('should show error message for empty user name', () => {
