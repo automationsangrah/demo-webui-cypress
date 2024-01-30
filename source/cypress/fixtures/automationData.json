@@ -6,5 +6,11 @@
   "invalidUser": {
     "Username": "invalid_user",
     "Password": "invalid_password"
-  }
+  },
+  "inventoryMenuList":[
+    "All Items",
+    "About",
+    "Logout",
+    "Reset App State"
+  ]
 }
