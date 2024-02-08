@@ -13,4 +13,7 @@ export class ProductPage {
     selectOption() {
         return cy.get('.select_container select')
     }
+    AddRemoveToCartButton() {
+        return cy.get('.btn_inventory')
+    }
 }
