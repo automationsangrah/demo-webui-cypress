@@ -4,6 +4,7 @@
   "description": "This solution of UI automation contain page object model pattern.",
   "main": "index.js",
   "scripts": {
+    "cy:open": "cypress open",
     "cy:run": "cypress run --headless --browser chrome --spec ./cypress/e2e/*.cy.js",
     "combine-reports": "mochawesome-merge output-generation/reports/mocha/**.json > output-generation/reports/report.json",
     "generate-reports": "marge output-generation/reports/report.json -f report -o output-generation/reports"
